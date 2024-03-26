@@ -1,5 +1,5 @@
 pipeline {
-    enviroment{
+    environment{
         imageTag = "${BUILD_NUMBER}"
     }
     agent any
