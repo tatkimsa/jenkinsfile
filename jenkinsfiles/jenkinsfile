@@ -1,0 +1,12 @@
+pipeline{
+    agent any{
+        label 'work1'
+    }
+    stages{
+        stage('hellow1'){
+            steps{
+                echo "Hello world"
+            }
+        }
+    }
+}
