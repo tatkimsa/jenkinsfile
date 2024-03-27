@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build with dockerfile') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'ef124931-3663-46a4-8915-28a5bfa6d2fd', passwordVariable: 'kimsatat', usernameVariable: 'System2#23')]) {
+                withCredentials([usernamePassword(credentialsId: 'ef124931-3663-46a4-8915-28a5bfa6d2fd', passwordVariable: 'USER', usernameVariable: 'PASS')]) {
     // some block
                 sh """
                     docker login -p $PASS -u $USER
