@@ -14,6 +14,8 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'ef124931-3663-46a4-8915-28a5bfa6d2fd', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
     // some block
 }
+                {
+    // some block
                 sh """
                     docker login -p $PASS -u $USER
                     docker build -t $USER/reactjs:${env.imageTage} .
