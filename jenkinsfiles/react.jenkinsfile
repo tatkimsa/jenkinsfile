@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git 'git credentialsId: 'ef124931-3663-46a4-8915-28a5bfa6d2fd', url: 'https://github.com/tatkimsa/reactjs.git''
+                git 'https://github.com/tatkimsa/reactjs.git'
             }
         }
         stage('Build with dockerfile') {
