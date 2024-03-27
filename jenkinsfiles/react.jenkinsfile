@@ -15,8 +15,8 @@ pipeline {
     // some block
                 sh """
                     docker login -p $PASS -u $USER
-                    docker build -t $USER/reactjs:${env.imageTage} .
-                    docker push $USER/reactjs:${env.imageTage}
+                    docker build -t $USER/reactjs:${env.imageTag} .
+                    docker push $USER/reactjs:${env.imageTag}
                 """
 
 }
